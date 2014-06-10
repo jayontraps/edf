@@ -1,0 +1,8 @@
+/* line 1, ../sass/slides.scss */
+.slides {
+  width: 100%;
+}
+/* line 4, ../sass/slides.scss */
+.slides img {
+  padding: .5em;
+}

@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'edf';
+    src:url('../fonts/edf.eot');
+    src:url('../fonts/edf.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/edf.svg#edf') format('svg'),
+        url('../fonts/edf.woff') format('woff'),
+        url('../fonts/edf.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+    font-family: 'edf';
+    content: attr(data-icon);
+    speak: none;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"]:before {
+*/
+.icon-home:before, .icon-info:before, .icon-folder:before, .icon-cart:before, .icon-mail:before, .icon-facebook:before, .icon-twitter:before, .icon-info-2:before {
+    font-family: 'edf';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+.icon-home:before {
+    content: "\e001";
+}
+.icon-info:before {
+    content: "\e000";
+}
+.icon-folder:before {
+    content: "\e002";
+}
+.icon-cart:before {
+    content: "\e003";
+}
+.icon-mail:before {
+    content: "\e004";
+}
+.icon-facebook:before {
+    content: "\e005";
+}
+.icon-twitter:before {
+    content: "\e006";
+}
+.icon-info-2:before {
+    content: "\e007";
+}
