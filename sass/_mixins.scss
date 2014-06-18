@@ -15,6 +15,10 @@
     @media (max-width : 1000px) { @content; }
   }
 
+  @else if $point == nine_hundred  {
+    @media (max-width : 900px) { @content; }
+  }
+
   @else if $point == mama-bear {
     @media (max-width: 768px)  { @content; }
   }

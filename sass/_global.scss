@@ -9,7 +9,7 @@ img {
 }
 
 body {
-	background-color: $bg;
+	background-color: $off_white;
 }
 
 body, html {
@@ -96,41 +96,70 @@ b, strong {
     
 		&:nth-child(1) {
 		    z-index: 10;
+
 		}
 
 		&:nth-child(2) {
 		    z-index: 9;
+
 		}
 
 		&:nth-child(3) {
 		    z-index: 8;
+
 		}
 
 		&:nth-child(4) {
 		    z-index: 7;
+
 		}
 
 		&:nth-child(5) {
 		    z-index: 6;
+
 		}
 
 		&:nth-child(6) {
 		    z-index: 5;
+
 		}
 
 		&:nth-child(7) {
 		    z-index: 4;
+
 		}
 
 		&:nth-child(8) {
 		    z-index: 3;
+
 		}
 
 }
 
 
+// .headroom--pinned {
+//     display: block;
+// }
+// .headroom--unpinned {
+//     display: none;
+// }
 
 
+.headroom {
+    // transition: transform 200ms linear;
+	@include transition-property(transform);
+	@include transition-duration(200ms);
+	@include transition-timing-function(linear);    
+}
+.headroom--pinned {
+    // transform: translateY(0%);
+    @include transform(translateY(0%));
+}
+.headroom--unpinned {
+    // transform: translateY(-100%);
+    @include transform(translateY(-100%));
+
+}
 
 
 

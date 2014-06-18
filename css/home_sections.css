@@ -1,9 +1,9 @@
 /*
-Syntax error: Undefined variable: "$logo_biege_lighten".
-        on line 62 of /Applications/MAMP/htdocs/edf_2014/wp-content/themes/edf_2014/sass/home_sections.scss
+Syntax error: Undefined variable: "$off_white".
+        on line 63 of /Applications/MAMP/htdocs/edf_2014/wp-content/themes/edf_2014/sass/home_sections.scss
 
 Backtrace:
-/Applications/MAMP/htdocs/edf_2014/wp-content/themes/edf_2014/sass/home_sections.scss:62
+/Applications/MAMP/htdocs/edf_2014/wp-content/themes/edf_2014/sass/home_sections.scss:63
 /Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/script/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/script/node.rb:40:in `perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
@@ -84,4 +84,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$logo_biege_lighten\".\A         on line 62 of /Applications/MAMP/htdocs/edf_2014/wp-content/themes/edf_2014/sass/home_sections.scss"; }
+  content: "Syntax error: Undefined variable: \"$off_white\".\A         on line 63 of /Applications/MAMP/htdocs/edf_2014/wp-content/themes/edf_2014/sass/home_sections.scss"; }

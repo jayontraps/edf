@@ -1,8 +1,69 @@
 .slides {
-	width: 100%;
+	width: 90%;
+	// padding-bottom: 4em;
+	margin: 0 auto 4em;
+
 
 	img {
 		padding: .5em;
 	}
+
+	.slick-prev:before, .slick-next:before { 
+		font-family: "slick";
+		 font-size: 40px;
+		 line-height: 1;
+		 color: black;
+		 opacity: 0.85;
+		 -webkit-font-smoothing: antialiased;
+		 -moz-osx-font-smoothing: grayscale;
+	 }
+
+	.slick-prev, .slick-next { 
+		position: absolute;
+		display: block;
+		height: 40px;
+		width: 40px;
+		line-height: 0;
+		font-size: 0;
+		cursor: pointer;
+		background: transparent;
+		color: transparent;
+		top: 50%;
+		margin-top: -10px;
+		padding: 0;
+		border: none;
+		outline: none;
+ }
+
+		.slick-prev { left: -25px; }
+		.slick-prev:before { content: "\2190"; }
+
+		.slick-next { right: -25px; }
+		.slick-next:before { content: "\2192"; } 
+
+ 	.slick-dots {
+
+ 		text-align: left;
+ 		margin: 0;
+
+			li { 
+				position: relative;
+				display: inline-block;
+				height: 20px;
+				width: 20px;
+				margin: 0px 5px;
+				padding: 0px;
+				cursor: pointer;
+				font-weight: bold;
+				font-size: 1.5em;
+				@include opacity(0.5);
+
+				&.slick-active {
+					@include opacity(1);
+				}
+			 } 		
+ 		} 
+
+
 
 }

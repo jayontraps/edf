@@ -10,18 +10,57 @@
 
 	<!-- </div> -->	<!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
+	<div class="footer-scene">
+		<!-- <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/_MG_5608.jpg"> -->
+	</div>
 
-		<div class="site-info">
-			
-			
+	<div class="row footer">
+
+		<footer id="colophon" class="site-footer grid" role="contentinfo">
+
+			<div class="site-info col-1-2">
+				<nav>
+					<ul class="footNav">
+						<li><a href="http://www.facebook.com/louise.kamara" title="follow us on Facebook" target="_blank"><span aria-hidden="true" class="icon-facebook"></span></a></li>
+
+					</ul>
+				</nav>			
+			</div><!-- .site-info -->
+
+		<div class="site-info col-1-2">
+			<nav>
+				<ul class="footNav">
+					<li><a href="https://twitter.com/ecodesignfair" title="follow us on Twitter" target="_blank"><span aria-hidden="true" class="icon-twitter"></span></a></li>
+				</ul>
+			</nav>
+
 		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+
+
+		</footer><!-- #colophon .site-footer .grid -->
+
+	</div>
+
 
 
 <!-- </div> -->	<!-- #page -->
 
 <?php wp_footer(); ?>
+
+<?php if (is_page_template("page.directory.php")) : ?>
+
+	<script type="text/javascript">
+		
+	    var container = document.querySelector('#dir_content');
+	    var msnry = new Masonry( container, {
+	      // options
+	      columnWidth: container.querySelector('.directory_item'),
+	      itemSelector: '.directory_item'
+	    });     
+	    	
+	</script>
+
+<?php endif; ?>
 
 </body>
 </html>

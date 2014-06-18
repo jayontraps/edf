@@ -1,48 +1,43 @@
 
-<div class="col-1-2">
-	
-	<div class="logo">
-		<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/2014-logo-hr.png">
-	</div>
+<nav role="navigation" id="site-navigation" class="main-navigation ">	
 
-</div>
+	<h4 class="menu-toggle"><span class="navicon"></span></h4>		
 
+	<ul id="menu" class="nav-menu">
 
-<nav role="navigation" class="site-navigation main-navigation col-1-2 ">			
-
-	<ul>
-
-	  <li><a id="events" href="#" rel="home" <?php if ($postid==84) echo "class=\"active\""; ?>>
-	  	<span aria-hidden="true" class="icon icon-home"></span><span class="navTitle">Events</span>
+	  <li><a id="fair" href="<?php bloginfo('url'); ?>/#fair_sec" rel="home" <?php if ($postid==84) echo "class=\"active\""; ?>>
+	  	<span class="navTitle">Events</span>
 	  </a>
 	</li>
 
 
-	  <li><a id="about" href="#" title="About" <?php if ($postid==82) echo "class=\"active\""; ?>>
-	  	<span aria-hidden="true" class="icon icon-info"></span><span class="navTitle">About</span>
+	  <li><a id="about" href="<?php bloginfo('url'); ?>/#about_sec" title="About" <?php if ($postid==82) echo "class=\"active\""; ?>>
+	  	</span><span class="navTitle">About</span>
 	  </a>
 	</li>
 
 
-	  <li><a  id="products" href="#" title="Products" >
-	  	<span aria-hidden="true" class="icon icon-calendar"></span><span>Products</span>
+	  <li><a id="products" href="<?php bloginfo('url'); ?>/#products_sec" title="Products" >
+	  	<span>Gallery</span>
 	  </a>
 	</li>
 
 
-	  <li><a href="#" title="Directory" 
+	  <li><a id="directory" href="<?php echo bloginfo( 'url' ); ?>/#directory_sec" title="Directory" 
 	  	<?php 
 	  		if (is_page('directory') || $post->post_parent == "20")
 				    {
 				        echo "class=\"active\"";
 				    }  ?>
-	  	><span aria-hidden="true" class="icon icon-folder"></span><span class="navTitle">Directory</span>
+	  	>
+	  	<span class="navTitle">Directory</span>
 	  </a>
 	</li>
 
 
-	  <li><a href="#" title="Contact" <?php if ($postid==83) echo "class=\"active\""; ?>
-	  	><span aria-hidden="true" class="icon icon-mail"></span><span class="navTitle">Contact</span>
+	  <li><a href="<?php bloginfo('url'); ?>/contact/" title="Contact" <?php if ($postid==83) echo "class=\"active\""; ?>
+	  	>
+	  	<span class="navTitle">Contact</span>
 	  </a>
 	</li>
 

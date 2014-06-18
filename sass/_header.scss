@@ -1,16 +1,27 @@
-.branding {
-	margin-top:3em;
-	position: relative;
+// .branding {
+// 	margin-top:3em;
+// 	position: relative;
 
-	.grid {
-		padding: 1em 2em;
-		position: relative;
-		z-index: 2;
-	}
+// 	.grid {
+// 		padding: 1em 2em;
+// 		position: relative;
+// 		z-index: 2;
+// 	}
+// }
+
+
+.inner-header {
+	position: relative;
 }
 
 .logo {
 	margin-top:.7em;
 	width:80%;
+	max-width: 450px;
+	float: left;
+	@include breakpoint(baby-bear) {
+		width: 100%;
+		padding-right: 60px;
+	}
 }
 

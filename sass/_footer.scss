@@ -1,0 +1,43 @@
+.footer-scene {
+	width:100%;
+	// max-width: 1400px;
+	// margin:0 auto;
+	background: url(../images/_MG_5608.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	min-height: 500px;
+	position: relative;
+	z-index: 9999;
+	background-color: $edf_dark_green;
+}
+
+.footer {
+	background-color: $edf_dark_green;
+}
+
+.site-footer    {
+	background-color: $edf_dark_green;
+    padding: 25px 0;
+    color: $off_white;
+}
+
+ul.footNav  {
+	list-style:none;
+    margin: 0;
+    li {
+    	text-align: center;
+		a {
+	    	text-align: center;
+	        font-size: 37px;
+	        text-decoration:none;
+            color: $off_white;
+	        &:visited {
+				color: $off_white;
+	        }
+	        &:hover {
+				color: $off_white;
+	        }
+	    }
+    }
+
+}

@@ -1,0 +1,76 @@
+/* Contact Page */
+
+div.selectForm {
+
+    width:100%;
+    padding-bottom:20px;
+    @extend .group;
+
+    h6 {
+        width:20%;
+        float: left;
+        margin-top:10px;
+    }
+
+    div.choice {
+    	width:25%;
+    	float: left;
+        margin-top:10px;
+    }
+   
+}   
+
+.allForms  {
+
+    input[type="submit"] {
+        border:none;
+        display: block;
+        margin:0;
+        padding:.5em 1em;
+        background-color:$edf_orange;
+        text-decoration: none;
+        text-align: center;
+        color: $off_white;
+        @include transition-property(all);
+        @include transition-duration(200ms);
+        @include transition-timing-function(linear);    
+
+        &:visited {
+            color: $off_white;
+        }
+        &:hover {
+            color: $off_white;
+            background-color: darken($edf_orange, 10%);
+            cursor: pointer;
+        }
+        &:active {
+            @include box-shadow(inset 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 1px 0px white);
+        }        
+    }
+
+    div ul {
+        width:100%;
+        list-style: none;
+        margin: 0;
+        padding: 0 0 20px 0;    
+        @extend .group;
+    }
+}
+
+li.formLabel {
+	float:left;
+	width:25%;
+}
+
+li.formInput {
+	float: left;
+	width:75%;
+}
+
+.error {
+    display: none;
+}
+
+.hide {
+    display: none;
+}

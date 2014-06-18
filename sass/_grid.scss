@@ -63,6 +63,14 @@
     }    
 }
 
+.col-3-4 {
+    width: 75%;
+    @include breakpoint( baby-bear) {
+        float:none;
+        width:100%;
+    }    
+}
+
 .col-1-8 {
     width: 12.5%;
     min-width:100px;

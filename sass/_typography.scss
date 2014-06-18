@@ -60,7 +60,10 @@ h1 {
 }
 h2 {
 	font-size:$h2-size;
-
+	
+	@include breakpoint(baby-bear) {
+		font-size: 2em;
+	}
 }
 h3 {
 	font-size:$h3-size;

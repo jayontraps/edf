@@ -73,43 +73,7 @@
 
 
 
-/* Small menu */
 
-// .menu-toggle {
-//     cursor: pointer;
-//     display: none;
-// }
-
-// @include breakpoint (baby-bear) {
-//     .menu-toggle,
-//     .main-navigation.toggled .nav-menu {
-//         display: block;
-//     }
-
-//     .main-navigation ul {
-
-//         display: none;
-
-//         li {
-//             float: none;
-//             width: 100%;
-//             text-align: left;
-
-//             a {
-//                 padding:.5em 0;
-//             }
-//         }
-
-
-
-//         li:last-of-type {
-//             text-align: left;
-//         }
-
-
-
-//     }
-// }
 
 
 
@@ -146,73 +110,35 @@
 ----------------------------------------- */
 nav[role="navigation"]  {
 
-
     ul {
         list-style: none;
         margin: 0;
         padding-left: 0;
-        width:90%;
+        width:50%;
         float: right;
 
         li {
             float: left;
             margin: 0 0 0 0;
-            padding: 0 4%;
+            padding: 0;
             width: 20%;
+
+            a {
+                float: left;
+                padding: 1em;
+                font-weight: normal;
+                font-family: $body_font_bold;
+                font-size: .85em;
+                color: #F6F6F6; 
+                text-decoration: none;
+                text-transform:uppercase;
+
+                @include breakpoint(init) {
+                    padding: 1em 0;
+                }
+            }            
         }
 
-        // li:first-child {
-        //     padding-left:0;
-        // }
-
-
-        li a {
-            float: left;
-            padding: 1em;
-            font-weight: normal;
-            font-size: .85em;
-            color: #F6F6F6; 
-            text-decoration: none;
-            text-transform:uppercase;
-        }
-
-        li a:hover,  li a.active   {
-            color: $edf_orange;
-            text-decoration: none;
-        }
-
-        .navTitle {
-            padding-left:1em;
-        }
-
-        .icon {
-            display: none;
-        }
-
-        .page2  li a:hover, .page2  li a.active {
-            color: #E27826;
-        }   
-
-        .page3  li a:hover, .page3  li a.active {
-            color: #707B5D;
-        }   
-
-
-
-
-        li a span    {
-            padding-right:6px;
-        }
-
-        li a:hover,
-        li a:focus {
-        }
-        li a:active {
-        }
-        li.active a {
-
-
-        }
          li:last-child a {
             margin-right: 0;
             padding-right: 0;
@@ -227,16 +153,106 @@ nav[role="navigation"]  {
 
 
 /* Small menu */
+
 .menu-toggle {
     cursor: pointer;
-}
-.main-small-navigation .menu {
+    float: right;
     display: none;
+
+    @include breakpoint(baby-bear) {
+        float: left;
+    }
+
 }
 
-ul.topNav   {
-    margin-bottom: 0;
+@include breakpoint (nine_hundred) {
+
+    h4.menu-toggle {
+
+        display: block;
+        padding:0;
+
+        span.navicon {
+            position: absolute;
+            right:10px;
+            top:10px;
+            width: 30px;
+            height: 20px;
+            background: url(../images/nav.png) no-repeat;
+        }            
+
+        &:hover {
+            color: $body_color;
+
+            .navicon {
+                background-position: -30px 0;
+            }
+
+        }
+
+
+
+    }
+
+
+
+
+    nav[role="navigation"].toggled .nav-menu {
+        display: block;
+    }
+
+
+
+
+    nav[role="navigation"] {
+
+        ul {
+
+        display: none;
+        clear: left;
+        width:100%;
+        float: none;  
+        margin: 0 auto;      
+
+
+            li {
+                float: none;
+                width: 100%;
+                text-align: left;
+
+                a {
+                    padding:1em;
+                    float: none;
+
+                    .navTitle {
+                        padding:0;
+                        margin:0;
+                    }
+                }
+
+            }
+
+
+            li:last-of-type {
+                text-align: left;
+            }
+        } 
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -248,39 +264,39 @@ ul.topNav   {
 
 
 /* Sticky Nav */
-#site-navigation.fixed {
+// #site-navigation.fixed {
     
-        position:fixed;
-        left:0;
-        top:0;
-        background-color: $wide_bg;
-        z-index: 99999;
-        border-bottom: 1px solid $off_white;
+//         position:fixed;
+//         left:0;
+//         top:0;
+//         background-color: $wide_bg;
+//         z-index: 99999;
+//         border-bottom: 1px solid $off_white;
 
-     .menu-toggle {
-        height: 40px;
-     }
+//      .menu-toggle {
+//         height: 40px;
+//      }
 
 
-     ul {
-         // display: block;
-         margin: 0 auto;
-         width:100%;
-         max-width: $max-width;
+//      ul {
+//          // display: block;
+//          margin: 0 auto;
+//          width:100%;
+//          max-width: $max-width;
          
 
-         @include breakpoint(init) {
+//          @include breakpoint(init) {
 
-            width: 94%;
-            margin: 0 auto;
+//             width: 94%;
+//             margin: 0 auto;
 
-         }
-     }     
+//          }
+//      }     
 
-     .menu-toggle {
-        padding-left: 3%;
-     }
- }
+//      .menu-toggle {
+//         padding-left: 3%;
+//      }
+//  }
  
 
  

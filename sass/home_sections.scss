@@ -44,6 +44,7 @@
 
 
 .row {
+	
 
 
 	&.home_1 {
@@ -59,11 +60,28 @@
 
 	}
 	&.home_3 {
-		background-color: $logo_biege_lighten;
+		background-color: $off_white;
+		padding-bottom:35px;
+
+		position: relative;
+
+		// background-color: $logo_biege_lighten;
 		//background-color: rgba($edf_blue, 0.5);
 		// background-color: lighten($edf_blue, 20%);
+
+		// &:after {
+		// 	content: "";
+		// 	bottom: 0;
+		// 	left: 0;
+		// 	position: absolute;
+		// 	width: 100%;
+		// 	height: 60px;
+		// 	background-color:$edf_dark_green;
+
+		// }				
 	}		
 }
+
 
 
 
@@ -79,11 +97,20 @@
 		&.home-text {
 			padding: 4em 10em;
 		}
+
+		@include breakpoint(mama-bear) {
+			&.home-text {
+				padding: 2em 2em;
+			}
+		}
 	}
 
 	h2 {
 		text-align: center;
 		padding-bottom:1em;
+		font-family: $heading_font;
+		letter-spacing: $header_letter_spacing;
+
 	}
 	h3 {
 		text-align: center;
@@ -117,31 +144,47 @@
 
 #intro {
 	min-height: 100%;
-	background: url(../images/_MG_5645.jpg);
+	background: url(../images/_MG_5645-compressor.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: -1px 0;
 
 	@include breakpoint(desktop) {
 		min-height: 839px;
 	}
+
 }
 
 #seaside {
+	padding:0;
+	margin:0;
+
+	img {
+		margin-bottom:-10px;
+	}
 	min-height: 100%;
-	background: url(../images/_MG_5993.jpg);
+	background: url(../images/_MG_5993-compressor.jpg);
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: cover;
+	background-color: $off_white;
 
 	@include breakpoint(desktop) {
 		min-height: 839px;
 	}
+
+	@include breakpoint(baby-bear) {
+		min-height: 250px;;
+		background-size: 100%;
+	}		
 }
 
-#colophon {
-	background: url(../images/_MG_5608.jpg);
-	background-repeat: no-repeat;
-	background-size: 100%;
-	min-height: 500px;
+#prod-list {
+	ul {
+		list-style: none;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+	}
 }
 
 
@@ -155,11 +198,16 @@ h1.main-intro {
 	padding:3em 2em;
 	color:$off_white;
 	font-size: 2.5em;
+	font-weight: normal;
 	font-family: $body_font_bold;
 	@include text-shadow(rgba(#000, 0.2) 2px 2px 0);
 
 	.high {
 		color:$off_white;
+	}
+
+	@include breakpoint(baby-bear) {
+		font-size: 1.8em;
 	}
 }
 

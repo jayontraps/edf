@@ -25,65 +25,25 @@
 
 <body <?php body_class(); ?>>
 
-<!-- <div id="page" class="hfeed site wrapper"> -->
 
-<!-- 	<div class="row head"> -->
+	<header id="masthead" class="site-header head" role="banner">
 
-		<header id="masthead" class="site-header grid head" role="banner">
+		<div class="inner-header">
 
-			
-<!-- 			<div class="site-branding">
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-			</div> -->
+		<div class="logo">
+			<a href="<?php bloginfo('url'); ?>">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/2014-logo-hr.png">
+			</a>
+		</div>
 
-	<!-- 		<nav id="site-navigation" class="main-navigation" role="navigation">
-				<h1 class="menu-toggle"><?php _e( 'Menu', 'edf_2014' ); ?></h1>
-				<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'edf_2014' ); ?></a>
-
-				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-			</nav><!-- #site-navigation --> 
-
-
-		
+					
 		<?php include "inc/menu.php"; ?>
 
-		</header><!-- #masthead .grid -->
+		</div>		
 
-	<!-- </div> --> <!-- .row -->
-
-
-	
-	<div class="stripes"><img src="<?php echo get_stylesheet_directory_uri();?>/images/diagonal-edit4.svg" alt=""></div>
-
-<!-- 
-	<div class="row home_1 branding">
-
-		<div class="grid entry-content">
-
-			<div class="col-1-3 ">
-				<div class="logo">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/2014-logo-hr.png">
-				</div> 
-				
-			</div>
+	</header><!-- #masthead .grid -->
 
 
 
-			<div class="col-2-3">
-				<h1 class="intro">A unique retail platform for the UK’s most <br><span class="high">innovative sustainable designers</span>.</h1>
-			</div> 
-
-
-
-
-
-		</div> -->
-
-	</div>
-
-
-
-	<!-- <div id="content" class="site-content"> -->
 
 
