@@ -96,6 +96,23 @@
 
 		&.home-text {
 			padding: 4em 10em;
+
+			&.double-col {
+
+				div {
+
+				@include column-count(2);
+				@include column-gap(50px);
+
+					@include breakpoint(mama-bear) {
+						@include column-count(1);
+						// @include column-gap(1);					
+					}				
+
+				}
+
+			}
+			
 		}
 
 		@include breakpoint(mama-bear) {
@@ -207,7 +224,9 @@ h1.main-intro {
 	}
 
 	@include breakpoint(baby-bear) {
-		font-size: 1.8em;
+		font-size: 1.6em;
+		padding:3em 1em;
+		line-height: 1.2em;
 	}
 }
 

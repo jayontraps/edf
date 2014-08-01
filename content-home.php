@@ -65,7 +65,7 @@
 
 <section class="row home_3 arrow" id="prod-list" >
 
-	<div class="grid entry-content home-chunks home-text">
+	<div class="grid entry-content home-chunks home-text double-col">
 		
 		<h2>Products you can expect to find</h2>
 
@@ -139,7 +139,7 @@
 
 <section class="row home_2 arrow">
 
-	<div class="grid entry-content home-chunks home-text">
+	<div class="grid entry-content home-chunks home-text double-col">
 		<?php if( get_field('chunk3_title') ): ?>
 		 
 		    <h2><?php the_field('chunk3_title'); ?></h2>

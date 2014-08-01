@@ -165,6 +165,8 @@ nav[role="navigation"]  {
 
 }
 
+
+
 @include breakpoint (nine_hundred) {
 
     h4.menu-toggle {
@@ -174,9 +176,9 @@ nav[role="navigation"]  {
 
         span.navicon {
             position: absolute;
-            right:10px;
+            right:5px;
             top:10px;
-            width: 30px;
+            width: 25px;
             height: 20px;
             background: url(../images/nav.png) no-repeat;
         }            
@@ -184,14 +186,11 @@ nav[role="navigation"]  {
         &:hover {
             color: $body_color;
 
-            .navicon {
-                background-position: -30px 0;
-            }
+            // .navicon {
+            //     background-position: -30px 0;
+            // }
 
         }
-
-
-
     }
 
 
@@ -221,8 +220,10 @@ nav[role="navigation"]  {
                 text-align: left;
 
                 a {
-                    padding:1em;
+                    display: block;
                     float: none;
+                    width: 100%;
+                    padding: .7em 1em;
 
                     .navTitle {
                         padding:0;
@@ -239,6 +240,26 @@ nav[role="navigation"]  {
         } 
     }
 }
+
+
+// @include breakpoint(baby-bear) {
+//     nav[role="navigation"] {
+
+//         ul {
+
+//             li {
+
+//                 a {
+//                     display: block;
+//                     padding: .7em 1em;
+
+//                 }
+
+//             }
+//         } 
+//     }    
+// }
+
 
 
 

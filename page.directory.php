@@ -84,7 +84,7 @@
 
 			<img src="<?php echo $image[0];?>" />
 
-			<span class="teaser"><h4>Visit Website</h4></span>
+			<div class="teaser">Visit Website</div>
 
 		</a>
 

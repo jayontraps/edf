@@ -16,6 +16,14 @@
 
 		<?php the_content(); ?>
 
+
+
+
+
+		<div class="form_container">
+
+
+
 	    <div class="selectForm">
 
 	         <h6>I am ...</h6>
@@ -39,8 +47,6 @@
 
 
 
-
-		<div class="form_container">
 
 			<div id="visitor" class="form_content allForms">
 
@@ -304,7 +310,15 @@
 				<li class="formInput">			
 
 					<div>
-						<input id="Field120" name="Field120" type="text" class="field text medium" value="" maxlength="255" tabindex="6" onkeyup="" size="50" />
+						<textarea
+						id="Field120" 
+						name="Field120" 
+						type="text" 
+						rows="5" cols="50" 						
+						class="field text medium" 
+						value="" 
+						maxlength="255" 
+						tabindex="6" onkeyup="" size="50" ></textarea> 
 					</div>
 				</li>
 			</ul>
@@ -322,7 +336,17 @@
 				<li class="formInput">
 
 					<div>
-						<input id="Field4" name="Field4" type="email" spellcheck="false" class="field text medium" value="" maxlength="255" tabindex="7" size="25" required /> 
+						<input
+						id="Field4" 
+						name="Field4" 
+						type="email" 
+						spellcheck="false" 
+						class="field text medium" 
+						value="" 
+						maxlength="255" 
+						tabindex="7" 
+						size="25" 
+						required />
 					</div>
 				</li>
 
@@ -363,7 +387,7 @@
 						name="Field5" 
 						class="field textarea small" 
 						spellcheck="true" 
-						rows="10" cols="50" 
+						rows="5" cols="50" 
 						tabindex="9" 
 						onkeyup=""
 						 ></textarea>

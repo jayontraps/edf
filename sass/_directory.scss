@@ -9,6 +9,7 @@
 	display: block;
 	margin:1em;
 	padding:1em;
+	// max-width:200px;
 	background-color:$edf_orange;
 	text-decoration: none;
 	text-align: center;
@@ -26,6 +27,11 @@
 	}
 	&:active {
 		@include box-shadow(inset 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 1px 0px white);
+	}
+
+	@include breakpoint(mama-bear) {
+		max-width: 300px;
+		margin: 1em auto;
 	}
 }
 
@@ -49,12 +55,13 @@
 	position: fixed;
 	width:35px;
 	height: 41px;	
-	left: 0;
+	left: 10px;
 	opacity:1;
-	top:4em;
+	top:50%;
 	z-index:300;
 	padding:1em; 
 	background-color: rgba(0,0,0, 0.66);
+
 	// border-radius: 0 35px 35px 0;
 	// -moz-border-radius: 0 35px 35px 0;
 	// -webkit-border-radius:  0 35px 35px 0;
@@ -82,7 +89,13 @@
 	&:hover {
 		cursor: pointer;
 	}
+
+	// @include breakpoint(baby-bear) {
+	// 	top: 38px;
+	// }
+
 }
+
 #outArrow div.toggleSlide{
 
 	// background: url(../im/nav-close_normal.png) no-repeat;
@@ -117,14 +130,14 @@
 
 	// display: none;
 	position: fixed;
-	top: 4em;
+	top: 50px;
 	left: 0;
 	height: 100%;
 	z-index: 99;
-	width: 0px;
-	opacity: 0;
+	width: 10px;
+	// opacity: 0;
 	background-color: rgba(0,0,0, 0.7);
-	padding:1em;
+	// padding:1em;
 
 
 	&.opened-nav {
@@ -136,7 +149,7 @@
 	ul {
 		list-style: none;
 		margin: 0;
-		padding: 0;
+		padding: 2em 0 0 10px;
 		margin-left: -280px;
 		// width: 0;
 
@@ -161,8 +174,11 @@
 		 	}
 		 }					 	
 		}
-
 	}
+
+	@include breakpoint(baby-bear) {
+		top: 25px;
+	}	
 
 }
 
@@ -171,9 +187,12 @@
 .dir-title {
 	padding-top: 4em;
 	text-align: center;
+	@include breakpoint(baby-bear) {
+		padding-top:5em;
+	}
 	h2 {
 		font-size: 2em;
-		padding-bottom:.5em;
+		padding-bottom:1em;
 	}
 }
 
@@ -197,12 +216,12 @@
 
 .directory_item {
 
-	width: 18%;
-	max-width:215px;
+	width: 23%;
+	// max-width:275px;
 	background-color: white;
 	border: 2px solid darken($off_white, 5%);
 	margin-bottom:1em;
-	margin-right: 2%;
+	// margin-right: 1%;
 	// @include border-radius(5px);
 	// @include box-shadow(#dfdfdf 0px 1px 1px 0px);
 	// float: left;
@@ -210,14 +229,16 @@
 	// padding-bottom: $pad;
 	// margin-bottom: $pad;
 
-	&:nth-child(4n+4) {
-		// padding-right: 0;
-		margin-right: 0;
-	}
+	// &:nth-child(4n+4) {
+	// 	// padding-right: 0;
+	// 	margin-right: 0;
+	// }
 
 	padding: 10px;
 
 	.dir_details {
+
+		padding-top: 20px;
 
 		p {
 			font-size: 13px;
@@ -227,7 +248,7 @@
 	}
 
 	@include breakpoint(nine_hundred) {
-		width: 25%;
+		width: 40%;
 	}
 
 	@include breakpoint(mama-bear) {
@@ -245,30 +266,40 @@
 
 a.dir_tease {
 	position: relative;
-	display:inline-block;
+	display:block;
+	// width:100%;
 	
-	span {
-		display: inline-block;
+	// span {
+	// 	display: block;
+	// }
+
+	img {
+		display: block;
+		margin: 0 auto;
 	}
 
+
+
 	&:hover {
-		span.teaser h4 {
-			// display: inline-block;
+
+		.teaser {
+			// display: block;
 			@include opacity(1);
 		}
 	}
 
-	span.teaser h4 {
-		display: inline-block;
+	.teaser  {
+		// display: block;
 		position: absolute;
 		top: 0;
 		left: 0;
+		height: 0;
 		bottom: 0;
 		right: 0;
 		width: 100%;
 		text-align: center;
 		vertical-align: middle;
-		padding-top: 10%;
+		// padding-top: 10%;
 		color: $off_white;
 		background-color: rgba(0, 0, 0, 0.6);
 		// display: none;
@@ -276,6 +307,14 @@ a.dir_tease {
 		@include transition-property(opacity);
 		@include transition-duration(200ms);
 		@include transition-timing-function(linear); 
+	}
+
+	@include breakpoint(baby-bear) {
+		img {
+			display: block;
+			width: 195px;
+			margin: 0 auto;
+		}
 	}
 }
 
