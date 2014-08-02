@@ -221,6 +221,7 @@
 	background-color: white;
 	border: 2px solid darken($off_white, 5%);
 	margin-bottom:1em;
+	margin-right:1em;
 	// margin-right: 1%;
 	// @include border-radius(5px);
 	// @include box-shadow(#dfdfdf 0px 1px 1px 0px);
@@ -267,7 +268,7 @@
 a.dir_tease {
 	position: relative;
 	display:block;
-	// width:100%;
+	width:100%;
 	
 	// span {
 	// 	display: block;
@@ -293,7 +294,7 @@ a.dir_tease {
 		position: absolute;
 		top: 0;
 		left: 0;
-		height: 0;
+		// height: 0;
 		bottom: 0;
 		right: 0;
 		width: 100%;
@@ -316,6 +317,13 @@ a.dir_tease {
 			margin: 0 auto;
 		}
 	}
+	
+	// .teaser {
+	// 	display: none;
+	// }
+
+
+
 }
 
 // a.dir_tease {

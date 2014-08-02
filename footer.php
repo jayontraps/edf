@@ -47,21 +47,6 @@
 
 <?php wp_footer(); ?>
 
-<?php if (is_page_template("page.directory.php")) : ?>
-
-	<script type="text/javascript">
-		
-	    var container = document.querySelector('#dir_content');
-	    var msnry = new Masonry( container, {
-	      // options
-	      columnWidth: container.querySelector('.directory_item'),
-	      itemSelector: '.directory_item',
-	      "gutter": 20
-	    });     
-	    	
-	</script>
-
-<?php endif; ?>
 
 
 <script type="text/javascript">

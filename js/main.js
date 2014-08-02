@@ -75,6 +75,24 @@
 
 
 
+        // masonry.js
+
+        var container = document.querySelector('#dir_content');
+        var msnry = new Masonry( container, {
+          // options
+          // columnWidth: container.querySelector('.directory_item'),
+          // columnWidth: 250,
+          itemSelector: '.directory_item'
+          // "gutter": 20
+        });  
+
+         // var container = document.querySelector('#container');
+         //    var msnry = new Masonry( container, {
+         //      columnWidth: 200,
+         //      itemSelector: '.item'
+         //    });
+
+
 
 
 
